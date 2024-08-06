@@ -1,6 +1,15 @@
+import { ReactElement } from 'react';
 import './Colaborador.css'
+import React from 'react';
 
-const Colaborador = ({ nome, imagem, cargo, corDeFundo }) => {
+interface ColaboradorProps {
+    nome: string;
+    imagem: string;
+    cargo: string;
+    corDeFundo: string;
+}
+
+export default function Colaborador ({ nome, imagem, cargo, corDeFundo }: ColaboradorProps): ReactElement {
     return (<div className='colaborador'>
         <div className='cabecalho' style={{ backgroundColor: corDeFundo }}>
             <img src={imagem} alt={nome}/>
@@ -11,5 +20,3 @@ const Colaborador = ({ nome, imagem, cargo, corDeFundo }) => {
         </div>
     </div>)
 }
-
-export default Colaborador
