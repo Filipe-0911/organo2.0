@@ -12,10 +12,10 @@ interface FormularioProps {
 
 const Formulario = (props: FormularioProps) => {
 
-    const [nome, setNome] = useState('')
-    const [cargo, setCargo] = useState('')
-    const [imagem, setImagem] = useState('')
-    const [time, setTime] = useState('')
+    const [nome, setNome] = useState<string>('');
+    const [cargo, setCargo] = useState<string>('');
+    const [imagem, setImagem] = useState<string>('');
+    const [time, setTime] = useState<string>('');
 
     const aoSalvar = (evento: React.FormEvent<HTMLFormElement> ) => {
         evento.preventDefault()
@@ -25,10 +25,10 @@ const Formulario = (props: FormularioProps) => {
             imagem,
             time
         })
-        setNome('')
-        setCargo('')
-        setImagem('')
-        setTime('')
+        setNome('');
+        setCargo('');
+        setImagem('');
+        setTime('');
     }
 
     return (
