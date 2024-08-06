@@ -1,5 +1,4 @@
-import './ListaSuspensa.css'
-import React from 'react';
+import './ListaSuspensa.css';
 
 interface ListaSuspensaProps {
     label: string;

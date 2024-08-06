@@ -1,6 +1,5 @@
 import { ReactElement } from 'react';
-import './Colaborador.css'
-import React from 'react';
+import './Colaborador.css';
 
 interface ColaboradorProps {
     nome: string;

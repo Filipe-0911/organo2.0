@@ -1,7 +1,6 @@
 import Colaborador from '../Colaborador';
 import './Time.css'
 import { IColaborador } from '../../shared/interfaces/IColaborador'
-import React from "react";
 
 interface TimeProps {
     nome: string;
